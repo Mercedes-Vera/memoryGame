@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", system-ui, sans-serif;
+  letter-spacing: 5px;
+}
+
+.game-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.game-container h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #49ce6847;
+}
+
+.game-container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ffffff20;
+}
+
+
+
+.colors-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.color-button {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease, box-shadow 0.5s ease, transform 0.2s ease;
+  position: relative;
+}
+.start-button svg { /* Espacio entre el icono y el texto */
+  margin-top: 5px;
+  font-size: 30px; /* Tamaño del icono */
+  color: black;
+
+}
+
+.color-button.red { background-color: rgb(214, 20, 20); }
+.color-button.green { background-color: rgb(22, 167, 22); }
+.color-button.blue { background-color: rgb(11, 11, 192); }
+.color-button.yellow { background-color: rgb(190, 190, 22); }
+
+
+.color-button.active.red,
+.color-button.red:hover {
+  box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.7);
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+.color-button.active.green,
+.color-button.green:hover {
+  box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.7);
+  border-color: rgba(0, 255, 0, 0.5);
+}
+
+.color-button.active.blue,
+.color-button.blue:hover {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.7);
+  border-color: rgba(0, 0, 255, 0.5);
+}
+
+.color-button.active.yellow,
+.color-button.yellow:hover {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.7);
+  border-color: rgba(255, 255, 0, 0.5);
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+/* Estilos de los botones de control */
+.control-button {
+  font-family: "Press Start 2P", system-ui, sans-serif;
+  font-size: 15px;
+  color: blanchedalmond;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.start-button {
+  background-color: #49ce68;
+}
+
+.start-button:hover {
+  background-color: #218838;
+  letter-spacing: 3px;
+  transform: scale(1.05);
+}
+
+.start-button:active {
+  background-color: #1e7e34;
+}
+
+.no-hover {
+  pointer-events: none;
+  cursor: default;
+  background-color: #28a745;
+  transform: none;
+}
+
+.reset-button {
+  background-color: #dc3545;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+  letter-spacing: 3px;
+  transform: scale(1.05);
+}
+
+.reset-button:active {
+  background-color: #bd2130;
+}
